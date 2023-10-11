@@ -10,6 +10,10 @@ Array.from(buttons).forEach((button)=>{
                 memory=string;
                 document.querySelector('input').value=string;
             }
+            else if(e.target.innerHTML== 'x'){
+                string=string+"*";
+                document.querySelector('input').value=string;
+            }
             else if(e.target.innerHTML=='c'){
                 string='';
                 memory='';
